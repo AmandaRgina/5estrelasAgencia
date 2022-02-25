@@ -1,49 +1,50 @@
-.scroll {
+.scrolly {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
 
-  .scroll {
-    max-height: 75vw;
+  .scrolly {
+    max-width: 98vw;
     justify-content: center;
   
  
   }
-  .scroll .carousel {
-  
-    overflow-y: auto;
+  .scrolly .carousel {
+    display: flex;
+    overflow-x: auto;
     scroll-behavior: smooth;
-    
     
   }
   
-  .scroll .carousel::-webkit-scrollbar {
+  .scrolly .carousel::-webkit-scrollbar {
     display: none;
   }
   
-  .scroll .carousel .item {
-    background-color: white;
+  .scrolly .carousel .item {
+    background-color: rgb(5, 22, 39);
     margin-left: 40px;
 
-    height: 270px;
-    width: 210px;
+    height: 300px;
+    width: 240px;
     border-radius: 16px;
     flex: none;
   }
   
-  .scroll .carousel .item img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-   
+  .scrolly .carousel .item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 70px;
+    display: flex;
+    margin:1.2rem;
+    margin-top: 1.7rem;
    
   }
   
-  .scroll .carousel .item .price {
+  .scrolly .carousel .item .price {
     height: 70px;
-
+    display: flex;
 
 
   }
@@ -51,21 +52,10 @@
  
   
   
-  .scroll .carousel .item .price {
-    
-    
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #ffffff;
-    border-radius: 10px;
-    top: -95px;
   
-  
-  
-  }
   
 
-  .scroll .carousel .item span {
+  .scrolly .carousel .item span {
   
     text-align: center;
     color: #1e1e1e;
@@ -73,29 +63,29 @@
     border-radius: 10px;
   }
 
-  .scroll .buttons {
+  .scrolly .buttons {
     width: 100%;
-   
+    text-align: center;
     
   }
-  .scroll .buttons button {
+  .scrolly .buttons button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     
   }
 
-  .scroll .buttons button:first-child img {
+  .scrolly .buttons button:first-child img {
     transform: rotate(180deg);
   }
   
-  .scroll .buttons button img {
+  .scrolly .buttons button img {
     height: 1.5rem;
    
 
   }
 
-  .scroll .buttons button {
+  .scrolly .buttons button {
     height: 3rem;
     width: 3rem;
     background-image:linear-gradient(to bottom right, red, yellow);
@@ -105,21 +95,21 @@
 
   }
 
-  .scroll .buttons button {
+  .scrolly .buttons button {
   
     
     position: relative;
-    left: 36%;
+    left: 42%;
     margin-bottom: 20px;
     top: -60px;
 
   }
 
-  .scroll h1 {
+  .scrolly h1 {
 
     
     position: relative;
-    
+    justify-content: center;
 
 
   }

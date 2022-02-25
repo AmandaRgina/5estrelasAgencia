@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
-import './CardsLugares.css';
+import './MenuScroll.css';
 
 
 
-function CardLugares() {
+function MenuScrollBody4() {
   const [data, setData] = useState([]);
   const carousel = useRef<any>();
   
@@ -16,7 +16,7 @@ function CardLugares() {
 
   const handleLeftClick = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    carousel.current.scrollUp -= carousel.current.offsetHeight;
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
   };
 
   const handleRightClick = (e: { preventDefault: () => void; }) => {
@@ -29,7 +29,7 @@ function CardLugares() {
 
   return (
 
-    <div className="scroll">
+    <div className="scrolly">
        <h1 className="pt-5 pb-3">Lugares Populares </h1>
             <div className="buttons">
            
@@ -45,12 +45,11 @@ function CardLugares() {
         {data.map((item) => {
           const { id, name, price, oldPrice, image } = item;
           return (
-            <div className="item " key={id}>
+            <div className="item" key={id}>
     
              
                   <img src={image} alt={name} />
              
-                 <span className="price shadow">U$ {price}</span>
          
           
                   
@@ -64,4 +63,4 @@ function CardLugares() {
   );
 }
 
-export default CardLugares;
+export default MenuScrollBody4;
